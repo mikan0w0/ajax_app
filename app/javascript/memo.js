@@ -23,11 +23,10 @@ function memo() {
           ${item.content}
           </div>
         </div>`;
-      list.insertAdjacentHTML("beforebegin", HTML);
+      list.insertAdjacentHTML("afterend", HTML);
       formText.value = "";
     };
     e.preventDefault();
   });
- 
 }
 window.addEventListener("load", memo);
